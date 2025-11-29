@@ -10,7 +10,7 @@ public class Wordle {
     // Choose a random secret word from the dictionary. 
     // Hint: Pick a random index between 0 and dict.length (not including) using Math.random()
     public static String chooseSecretWord(String[] dict) {
-		double ran = (Math.random() * (dict.length - 1));
+		double ran = (Math.random() * (dict.length));
         String random = dict[(int)ran];
         return random;
     }
@@ -114,7 +114,7 @@ public class Wordle {
             // Loop until you read a valid guess
             while (!valid) {
                 System.out.print("Enter your guess (5-letter word): ");
-                guess = args[0];
+                guess = inp.readString();
                 
                 if (guess.length() != 5) {
                     System.out.println("Invalid word. Please try again.");
