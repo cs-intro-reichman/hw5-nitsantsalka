@@ -1,3 +1,10 @@
+/**
+Feedback:
+Nicely written 
+Things to think about: 
+containsChar - can use indexOf, instead of using a for
+**/
+
 public class Wordle {
 
     // Reads all words from dictionary filename into a String array.
